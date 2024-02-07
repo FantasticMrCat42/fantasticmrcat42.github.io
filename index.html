@@ -10,6 +10,14 @@
             src: url('https://dl.dafont.com/dl/?f=dited') format('opentype'); /* Replace 'DITED.OTF' with the actual font file name */
             /* Add more src lines for different file formats like woff, woff2, etc. if available */
         }
+        .container {
+            text-align: center; /* Center the image horizontally */
+        }
+
+        .container img {
+            display: block; /* Make the image a block element to center it */
+            margin: 0 auto; /* Center the image horizontally within its container */
+        }
 
         h1 {
             font-family: 'Dited', sans-serif; /* Apply the custom font to the title */
@@ -18,8 +26,10 @@
     </style>
 </head>
 <body>
-    <img src="Logo.png" alt="WAIS CSHS" width="500" hight="500">
-    <center><h1>This is a title with a custom font</h1></center>
+    <div class="container">
+        <img src="Logo.png" alt="WAIS CSHS" width="500" hight="500">
+        <center><h1>This is a title with a custom font</h1></center>
+    </div>
     <p>This is a paragraph with the default font.</p>
 </body>
 </html>
