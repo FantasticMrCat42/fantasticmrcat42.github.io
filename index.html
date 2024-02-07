@@ -1,13 +1,28 @@
-<body style="background-color:#06171E">
- 
+<!DOCTYPE html>
+<html lang="en">
 <head>
- <link href="" rel="stylesheet" type="text/css">
-   <center><img src="Logo.png" alt="WAIS Logo" class="center" width="500" height="500"> </center>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Font Example</title>
     <style>
-  </style>
-   <center><h1 style="color:white" style="font-family:dited">WAIS Computer Science Honor Society Landing Page</h1></center>
+        @font-face {
+            font-family: 'Dited';
+            src: url('https://dl.dafont.com/dl/?f=dited') format('opentype'); /* Replace 'DITED.OTF' with the actual font file name */
+            /* Add more src lines for different file formats like woff, woff2, etc. if available */
+        }
+
+        body {
+            font-family: 'Dited', sans-serif; /* Use the custom font */
+        }
+
+        h1 {
+            font-family: 'Dited', sans-serif; /* Apply the custom font to the title */
+            color: #333;
+        }
+    </style>
 </head>
-
-
-
+<body>
+    <h1>This is a title with a custom font</h1>
+    <p>This is a paragraph with the default font.</p>
 </body>
+</html>
